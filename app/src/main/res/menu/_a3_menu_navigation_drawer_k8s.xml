@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pods"
+            android:icon="@drawable/oo_cube_outline"
+            android:title="Pods" />
+        <item
+            android:id="@+id/nav_services"
+            android:icon="@drawable/oo_graph"
+            android:title="Services" />
+        <item
+            android:id="@+id/nav_deployments"
+            android:icon="@drawable/oo_package_variant"
+            android:title="Deployments" />
+        <item
+            android:id="@+id/nav_namespaces"
+            android:icon="@drawable/oo_grain"
+            android:title="Namespaces" />
+        <item
+            android:id="@+id/nav_other_resources"
+            android:icon="@drawable/oo_apps"
+            android:title="Resources" />
+        <item
+            android:id="@+id/nav_visualize"
+            android:icon="@drawable/oo_grey_chart_scatter_plot_hexbin"
+            android:title="Visualize" />
+    </group>
+    <group
+        android:id="@+id/grp_2"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/help"
+            android:title="Help" />
+    </group>
+
+</menu>

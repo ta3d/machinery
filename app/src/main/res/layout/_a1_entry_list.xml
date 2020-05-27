@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="?attr/actionBarSize"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="70dp"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:id="@+id/listentry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="listentry"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/oo_grey_40"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="@dimen/padding_m2"
+        android:layout_height="0dp" />
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="actionBarSize">56dp</dimen>
+
+    <dimen name="padding_s">4dp</dimen>
+    <dimen name="padding_m">5dp</dimen>
+    <dimen name="padding_m1">10dp</dimen>
+    <dimen name="padding_m2">15dp</dimen>
+    <dimen name="padding_m3">18dp</dimen>
+    <dimen name="padding_l">20dp</dimen>
+    <dimen name="padding_l1">40dp</dimen>
+    <dimen name="padding_l2">50dp</dimen>
+    <dimen name="padding_l3">60dp</dimen>
+
+</resources>

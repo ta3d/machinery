@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <include layout="@layout/_a3_entry_revert_swipe" />
+
+    <LinearLayout
+        android:id="@+id/base_parent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:focusable="true"
+        android:clickable="true"
+       android:background="?android:attr/selectableItemBackground" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/shape_ripple">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/padding_m2"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/oo_codepen" />
+
+                <View
+                    android:layout_width="@dimen/padding_m2"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Entry text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/oo_grey_80" />
+
+                <View
+                    android:layout_width="@dimen/padding_m2"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/click_delete"
+                    android:tint="@color/oo_grey_80"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/oo_code_tags"
+                    android:scaleType="centerCrop"
+                    android:background="@android:color/transparent"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/myspacer"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/oo_grey_10" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

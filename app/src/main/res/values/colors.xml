@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#263238</color>
+    <color name="colorPrimaryDark">#000a12</color>
+    <color name="colorPrimaryLight">#4f5b62</color>
+    <color name="colorSecondary">#9E9E9E</color>
+    <color name="colorSecondaryDark">#757575</color>
+    <color name="colorSecondaryLight">#BDBDBD</color>
+    <color name="colorAccent">#673AB7</color>
+    <color name="colorAccentDark">#512DA8</color>
+    <color name="colorAccentLight">#9575CD</color>
+    <color name="colorCrossLight">#FFD600</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="oo_grey_10">#e6e6e6</color>
+    <color name="oo_grey_20">#cccccc</color>
+    <color name="oo_grey_40">#999999</color>
+    <color name="oo_grey_60">#666666</color>
+    <color name="oo_grey_80">#37474F</color>
+    <color name="oo_grey_90">#263238</color>
+    <color name="oo_grey_100">#0d0d0d</color>
+
+    <color name="ov_dark_10">#1A000000</color>
+    <color name="ov_dark_20">#33000000</color>
+    <color name="ov_dark_30">#4D000000</color>
+    <color name="ov_dark_40">#66000000</color>
+    <color name="ov_dark_50">#80000000</color>
+    <color name="ov_dark_60">#99000000</color>
+    <color name="ov_dark_70">#B3000000</color>
+    <color name="ov_dark_80">#CC000000</color>
+    <color name="ov_dark_90">#E6000000</color>
+
+    <color name="ov_light_10">#1AFFFFFF</color>
+    <color name="ov_light_20">#33FFFFFF</color>
+    <color name="ov_light_30">#4DFFFFFF</color>
+    <color name="ov_light_40">#66FFFFFF</color>
+    <color name="ov_light_50">#8FFFFFF0</color>
+    <color name="ov_light_60">#99FFFFFF</color>
+    <color name="ov_light_70">#B3FFFFFF</color>
+    <color name="ov_light_80">#CCFFFFFF</color>
+    <color name="ov_light_90">#E6FFFFFF</color>
+
+
+</resources>

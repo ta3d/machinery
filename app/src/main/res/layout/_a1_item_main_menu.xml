@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/base_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal"
+        >
+
+        <View
+            android:layout_width="@dimen/padding_m2"
+            android:layout_height="0dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                app:srcCompat="@drawable/oo_hexagon_multiple_outline" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/padding_m2"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_m1"
+            android:paddingTop="@dimen/padding_m1">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/oo_grey_90" />
+
+            <TextView
+                android:id="@+id/url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_s"
+                android:maxLines="2"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/oo_grey_40" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/padding_m2"
+            android:layout_height="0dp" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/padding_l"
+            android:layout_height="@dimen/padding_l">
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/padding_m2"
+            android:layout_height="0dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

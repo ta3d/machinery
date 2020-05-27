@@ -1,0 +1,66 @@
+<resources>
+
+    <style name="AppTheme" parent="oo.BaseTheme" />
+
+    <style name="oo.BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionModeBackground">@color/colorAccentDark</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="oo.ThemeOverlay.AppCompat.Dark" parent="Platform.ThemeOverlay.AppCompat.Light">
+        <item name="android:windowBackground">@color/colorAccentDark</item>
+        <item name="android:colorForeground">@color/colorAccent</item>
+        <item name="android:colorForegroundInverse">@color/colorAccentDark</item>
+        <item name="android:colorBackground">@color/colorSecondary</item>
+        <item name="android:colorBackgroundCacheHint">@color/colorSecondaryDark</item>
+        <item name="colorBackgroundFloating">@color/colorAccentDark</item>
+        <item name="android:textColorSecondary">@color/colorSecondary</item>
+        <item name="android:textColorSecondaryInverse">@color/colorSecondaryLight</item>
+        <item name="android:textColorTertiary">@color/colorPrimary</item>
+        <item name="android:textColorTertiaryInverse">@color/colorSecondaryLight</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorPrimaryInverse">@color/colorPrimaryLight</item>
+        <item name="navigationIcon">@drawable/oo_porthole_toolbar</item>
+    </style>
+
+    <style name="oo.bigbar.ThemeOverlay.AppCompat.Dark" parent="Platform.ThemeOverlay.AppCompat.Light">
+        <item name="android:windowBackground">@color/colorAccentDark</item>
+        <item name="android:colorForeground">@color/colorAccent</item>
+        <item name="android:colorForegroundInverse">@color/colorAccentDark</item>
+        <item name="android:colorBackground">@color/colorSecondary</item>
+        <item name="android:colorBackgroundCacheHint">@color/colorSecondaryDark</item>
+        <item name="colorBackgroundFloating">@color/colorAccentDark</item>
+        <item name="android:textColorSecondary">@color/colorSecondary</item>
+        <item name="android:textColorSecondaryInverse">@color/colorSecondaryLight</item>
+        <item name="android:textColorTertiary">@color/colorPrimary</item>
+        <item name="android:textColorTertiaryInverse">@color/colorSecondaryLight</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorPrimaryInverse">@color/colorPrimaryLight</item>
+    </style>
+
+    <style name="oo.Button.Borderless" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="oo.Button.Black.White" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="oo.Button.Accent.White" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@android:color/white</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="oo.Input.Grey" parent="@style/AppTheme">
+        <item name="android:textColorHint">@color/oo_grey_40</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Subhead</item>
+        <item name="android:textColor">@color/oo_grey_90</item>
+    </style>
+
+
+</resources>

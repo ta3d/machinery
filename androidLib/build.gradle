@@ -1,0 +1,38 @@
+//apply plugin: 'java'
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+
+    }
+     compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+//    implementation fileTree(dir: 'lib', include: '*.jar')
+//    implementation files('lib/db4o-7.4.121.14026-java5.jar')
+ compile fileTree(dir: 'lib', include: '*.jar')
+    compile files('lib/db4o-7.4.121.14026-java5.jar')
+    compile files('lib/httpmime-4.0.1.jar')
+    compile files('lib/apache-mime4j-0.6.jar')
+    compile files('lib/simple-xml-2.7.1.jar')
+    compile files('lib/commons-lang3-3.1.jar')
+    compile files('lib/istio-client-1.1.0.jar')
+    compile files('lib/istio-model-1.1.0.jar')
+    compile files('lib/istio-common-1.1.0.jar')
+    compile files('lib/console-patched.aar')
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'joda-time:joda-time:2.9.4'
+
+}

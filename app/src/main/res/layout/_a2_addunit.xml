@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccentDark"
+        android:fitsSystemWindows="false"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetStartWithNavigation="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:background="@color/oo_grey_10"
+        android:clipToPadding="false"
+        android:padding="@dimen/padding_m2"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/unitNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_m1"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editServerName"
+                        style="@style/oo.Input.Grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/padding_l2"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/UnitName"
+                        android:minHeight="@dimen/padding_l1"
+                        android:paddingLeft="@dimen/padding_m2"
+                        android:paddingRight="@dimen/padding_m2" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/oo_grey_10" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_m"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Have direct Connection? "
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/oo_grey_60" />
+
+                <CheckBox
+                    android:id="@+id/directConnection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_m"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Use Kubeconfig? "
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/oo_grey_60" />
+
+                <CheckBox
+                    android:id="@+id/useKubeconfig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jumpserverText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_m1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/padding_m1"
+                    android:layout_height="@dimen/padding_m1"
+                    android:layout_margin="@dimen/padding_m"
+                    android:src="@drawable/shape_doughnut"
+                    android:tint="@color/colorSecondary" />
+
+                <View
+                    android:layout_width="@dimen/padding_m1"
+                    android:layout_height="0dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Jumpserver.."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/oo_grey_80" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/jumpserverInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_m1"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/editStatusServerUrl"
+                        style="@style/oo.Input.Grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/padding_l2"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/StatusServerUrl"
+                        android:minHeight="@dimen/padding_l1"
+                        android:paddingLeft="@dimen/padding_m2"
+                        android:paddingRight="@dimen/padding_m2" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/oo_grey_10" />
+
+                    <EditText
+                        android:id="@+id/editStatusServerPort"
+                        style="@style/oo.Input.Grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/padding_l2"
+                        android:background="@android:color/transparent"
+                        android:inputType="number"
+                        android:hint="Port e.g. 22"
+                        android:minHeight="@dimen/padding_l1"
+                        android:paddingLeft="@dimen/padding_m2"
+                        android:paddingRight="@dimen/padding_m2" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/oo_grey_10" />
+
+                    <EditText
+                        android:id="@+id/editUser"
+                        style="@style/oo.Input.Grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/padding_l2"
+                        android:background="@android:color/transparent"
+                        android:hint="Username"
+                        android:minHeight="@dimen/padding_l1"
+                        android:paddingLeft="@dimen/padding_m2"
+                        android:paddingRight="@dimen/padding_m2" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/oo_grey_10" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawSelectorOnTop="true"
+                        android:prompt="@string/ChooseAuth"
+                        android:textColor="@color/oo_grey_10"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/oo_grey_10" />
+
+                    <EditText
+                        android:id="@+id/editCredential"
+                        style="@style/oo.Input.Grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/padding_l2"
+                        android:background="@android:color/transparent"
+                        android:hint=""
+                        android:minHeight="@dimen/padding_l1"
+                        android:paddingLeft="@dimen/padding_m2"
+                        android:paddingRight="@dimen/padding_m2"
+                        android:password="true"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/apiserverText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_m1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/padding_m1"
+                    android:layout_height="@dimen/padding_m1"
+                    android:layout_margin="@dimen/padding_m"
+                    android:src="@drawable/shape_doughnut"
+                    android:tint="@color/colorSecondary" />
+
+                <View
+                    android:layout_width="@dimen/padding_m1"
+                    android:layout_height="0dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="API Server"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/oo_grey_80" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/unitApiServer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_m1"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editApiServerName"-->
+                        <!--style="@style/EditText.Flat.Grey"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/padding_l2"-->
+                        <!--android:background="@android:color/transparent"-->
+                        <!--android:hint=""-->
+                        <!--android:minHeight="@dimen/padding_l1"-->
+                        <!--android:paddingLeft="@dimen/padding_m2"-->
+                        <!--android:paddingRight="@dimen/padding_m2" />-->
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="@color/oo_grey_10" />-->
+
+                    <EditText
+                        android:id="@+id/editApiServerUrl"
+                        style="@style/oo.Input.Grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/padding_l2"
+                        android:background="@android:color/transparent"
+                        android:hint="URL or IP"
+                        android:minHeight="@dimen/padding_l1"
+                        android:paddingLeft="@dimen/padding_m2"
+                        android:paddingRight="@dimen/padding_m2"
+                        android:text="https://"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/oo_grey_10" />
+
+                    <EditText
+                        android:id="@+id/editApiServerPort"
+                        style="@style/oo.Input.Grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/padding_l2"
+                        android:background="@android:color/transparent"
+                        android:hint="Port"
+                        android:minHeight="@dimen/padding_l1"
+                        android:paddingLeft="@dimen/padding_m2"
+                        android:paddingRight="@dimen/padding_m2" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/oo_grey_10" />
+
+                    <EditText
+                        android:id="@+id/editApiUser"
+                        style="@style/oo.Input.Grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/padding_l2"
+                        android:background="@android:color/transparent"
+                        android:hint="Username"
+                        android:minHeight="@dimen/padding_l1"
+                        android:paddingLeft="@dimen/padding_m2"
+                        android:paddingRight="@dimen/padding_m2" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/oo_grey_10" />
+
+                    <!-- perhaps for later auth via tlsfile etc.<Spinner-->
+                        <!--android:id="@+id/spinner2"-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:drawSelectorOnTop="true"-->
+                        <!--android:prompt="@string/ChooseAuth"-->
+                        <!--android:textColor="@color/oo_grey_10"-->
+                        <!--/>-->
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="@color/oo_grey_10" />-->
+
+                    <EditText
+                        android:id="@+id/editApiCredential"
+                        style="@style/oo.Input.Grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/padding_l2"
+                        android:background="@android:color/transparent"
+                        android:hint="Password"
+                        android:minHeight="@dimen/padding_l1"
+                        android:paddingLeft="@dimen/padding_m2"
+                        android:paddingRight="@dimen/padding_m2"
+                        android:password="true"/>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/usekubeconfigText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_m1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/padding_m1"
+                    android:layout_height="@dimen/padding_m1"
+                    android:layout_margin="@dimen/padding_m"
+                    android:src="@drawable/shape_doughnut"
+                    android:tint="@color/colorSecondary" />
+
+                <View
+                    android:layout_width="@dimen/padding_m1"
+                    android:layout_height="0dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Use Kubeconfig"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/oo_grey_80" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/unitKubeconfig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_m1"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="3dp"
+
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editKubeconfig"
+                        style="@style/oo.Input.Grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/padding_l2"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/UnitName"
+                        android:minHeight="@dimen/padding_l1"
+                        android:paddingLeft="@dimen/padding_m2"
+                        android:paddingRight="@dimen/padding_m2" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/oo_grey_10" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/padding_m2"
+        android:clickable="true"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/colorAccentDark"
+        app:fabSize="normal"
+        app:rippleColor="@color/oo_grey_10"
+        app:srcCompat="@drawable/oo_check" />
+
+</RelativeLayout>
