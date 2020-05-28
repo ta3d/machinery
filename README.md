@@ -33,12 +33,12 @@ https://play.google.com/store/apps/details?id=org.openobjectives.machinery
 
 ## Screenshots
 
-![1](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_1-768x1365.png)
-![2](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_2-768x1365.png)
-![3](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_3-768x1365.png)
-![4](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_4-768x1365.png)
-![5](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_7-768x1365.png)
-![6](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_5-768x1365.png)
-![7](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_8-768x1365.png)
-![8](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_9-768x1365.png)
-![9](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_11-768x1365.png)
+![1](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_1-169x300.png)
+![2](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_2-169x300.png)
+![3](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_3-169x300.png)
+![4](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_4-169x300.png)
+![5](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_7-169x300.png)
+![6](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_5-169x300.png)
+![7](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_8-169x300.png)
+![8](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_9-169x300.png)
+![9](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_11-169x300.png)
