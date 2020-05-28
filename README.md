@@ -42,3 +42,4 @@ https://play.google.com/store/apps/details?id=org.openobjectives.machinery
 ![7](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_8-169x300.png)
 ![8](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_9-169x300.png)
 ![9](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_11-169x300.png)
+![10](https://openobjectives.de/wp-content/uploads/2020/05/Screenshot_10-169x300.png)
